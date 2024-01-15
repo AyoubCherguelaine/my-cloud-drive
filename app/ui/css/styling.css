@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-bar{
+  color: #fff;
+  background-color: #2D2D2D;
+}
+
+.logo-text{
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.form-regester{
+  width: 393px;
+  height: 539px;
+  color: #fff;
+  background-color: #2D2D2D;
+  font-family: Inria Sans;
+}
+
+.form-login-email-password{
+  margin: 63px 0px;
+}
+
+.form-login{
+  width: 393px;
+  height: 459px;
+  color: #fff;
+  background-color: #2D2D2D;
+  font-family: Inria Sans;
+}
+
+.form-text{
+ font-size: 18px;
+}
+
+.form-title{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.input-text{
+  border-radius: 10px;
+  background: #454545;
+}
+.input-text:focus{
+  border-radius: 10px;
+  background: #636363;
+}
+
+.login-button{
+  
+  background-color: #454545;
+  font-size: 25px;
+  width: 193px;
+}
+
+.login-button:hover{
+  background-color: #636363;
+  font-size: 25px;
+  width: 193px;
+}

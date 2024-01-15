@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.popup-upload{
+    width :auto;
+    height: max-content;
+    margin: 50px 100px; 
+    background-color: #2D2D2D;
+}
+
 .nav-bar{
   color: #fff;
   background-color: #2D2D2D;

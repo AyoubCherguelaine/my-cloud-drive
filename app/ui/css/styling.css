@@ -3,6 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.side-bar{
+  background-color: #4F4F4F;
+}
+
+.main-dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.h-screen-main{
+   height: 95svh;
+}
+
 .popup-upload{
     width :auto;
     height: max-content;

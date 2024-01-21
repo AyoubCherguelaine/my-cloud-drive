@@ -20,8 +20,10 @@ const FileMain: FC<FileMainProps> = ({ type, files }): ReactNode => {
     const RenderComponent = type === 'list' ? FileList : FileGrid;
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {files.map((file, index) => renderFile(file, String(index), RenderComponent))}
+        <div className='p-8 h-screen-main overflow-auto'>
+            <div className="p-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {files.map((file, index) => renderFile(file, String(index), RenderComponent))}
+            </div>
         </div>
     );
 };

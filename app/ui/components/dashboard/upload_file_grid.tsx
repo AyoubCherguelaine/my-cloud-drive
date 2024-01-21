@@ -23,7 +23,7 @@ const UploadFileGrid: FC = () => {
 
   return (
     <div>
-      <button onClick={handleOpenModal}>Upload</button>
+      <button className='upload-file-button w-36 h-8 min-w-30 min-5-6 rounded' onClick={handleOpenModal}>Upload</button>
       <UploadFileModal
         isOpen={modalIsOpen}
         onRequestClose={handleCloseModal}

@@ -3,8 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.upload-file-button{
+  background-color: #454545;
+  font-size: 18px;
+}
+
 .side-bar{
-  background-color: #4F4F4F;
+  background-color: #2D2D2D;
 }
 
 .main-dashboard {
@@ -87,4 +92,8 @@
   background-color: #636363;
   font-size: 25px;
   width: 193px;
+}
+
+*{
+  font-family: 'Inria Sans';
 }

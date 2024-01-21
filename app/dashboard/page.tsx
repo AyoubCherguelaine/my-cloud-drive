@@ -1,12 +1,9 @@
 import FileMain from "../ui/components/files/file_main"
-import UploadFileGrid from "../ui/components/dashboard/upload_file_grid"
 import SideBar from "../ui/components/dashboard/nav_bar"
 
 export default function dashboard(){
 
-    const onFileUpload = (file: File)=>{
-        console.log(file)
-    }
+    
     let files_list = ['file1.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf']
     
     return (

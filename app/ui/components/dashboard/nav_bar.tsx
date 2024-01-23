@@ -10,6 +10,18 @@ const SideBar: FC = () =>{
         console.log(file)
     }
 
+    const onHomeClick = ()=>{
+
+    }
+
+    const onRecentClick = ()=>{
+
+    }
+
+    const onSharedFileClick = ()=>{
+
+    }
+
     return (
 
         <div className="side-bar h-screen-main">
@@ -18,7 +30,14 @@ const SideBar: FC = () =>{
     
                     <UploadFileGrid/>
 
-                    <div className="py-2 ">
+                    <div className="py-8 grid">
+                        <button className="row columns-1 w-44 h-7 side-button" onClick={onHomeClick} >Home</button>
+                        <button className="row columns-1 w-44 h-7 side-button" onClick={onSharedFileClick}>Shared File</button>
+                        <button className="row columns-1 w-44 h-7 side-button" onClick={onRecentClick}>Recent</button>
+
+                    </div>
+
+                    <div className="py8 grid chat-side-bar">
                         
                     </div>
 

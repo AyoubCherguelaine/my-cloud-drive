@@ -1,5 +1,4 @@
-
-class SystemFile{
+export class File_{
 
     constructor(
         id:number,
@@ -13,9 +12,16 @@ class SystemFile{
 
     }
 
-    static details():void{
-        
+    delete():any{
+
+    }
+
+    update(obj:object):any{
+
     }
     
+    share(toUserID:number):void{
+
+    }
 
 }

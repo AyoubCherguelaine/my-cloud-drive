@@ -1,29 +1,33 @@
+"use client"
 import FileMain from "../ui/components/files/file_main"
-import SideBar from "../ui/components/dashboard/nav_bar"
+import SideBar from "../ui/components/dashboard/sideBar"
 
-export default function dashboard(){
 
+import { useState, useEffect, FC } from "react";
+
+const Dashboard: FC = ()=>{
+
+    const [dashboadType,setDashboadType] = useState<string>("Home")
     
     let files_list = ['file1.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf', 'file2.pdf', 'file3.pdf', 'file4.pdf']
     
     return (
-        <>
+        <main className="h-screen-main">
             <div>Dashboard</div>
             <div className="main-dashboard">
                 <div className="w-1/6" >
-                    <SideBar />
+                    <SideBar setDashboadType={setDashboadType} dashboadType={dashboadType}/>
                 </div>
                 
                 <div className="w-5/6" >
+                    <div>{dashboadType}</div>
                     <FileMain type="list" files={files_list}/>
                 </div>
             </div>
-        </>
+        </main>
 
     
     )
 }
 
-{/* <div>
-            <UploadFileGrid/>
-</div> */}
+export default Dashboard;

@@ -2,8 +2,8 @@
 
 // App.tsx (or any other component where you want to use the button and modal)
 import React, { FC, useState } from 'react';
-import "../../css/styling.css"
-import UploadFileModal from '../files/upload_file';
+import "../../../css/styling.css"
+import UploadFileModal from '../../files/upload_file';
 
 const UploadFileGrid: FC = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);

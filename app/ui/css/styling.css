@@ -28,8 +28,8 @@
     background-color: #2D2D2D;
 }
 
-.side-button:hover{
-  background-color: #2D2D2D;
+.side-button-selected{
+  background-color: #454545;
 }
 
 .nav-bar{
